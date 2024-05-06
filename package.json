@@ -1,0 +1,11 @@
+{
+  "name": "eth-js-signature",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "elliptic": "^6.5.5",
+    "js-sha3": "^0.9.3"
+  }
+}
