@@ -18,9 +18,14 @@ function main() {
   const message = "0202020202020202020202020202020202020202020202020202020202020202";
   const result = signMessage(privateKey, message);
 
+  const hashed = keccak256(Buffer.from(message, "hex"));
+
   // Prints
   // 97ef30233ead25d10f7bb2bf9eaf571a16f2deb33a75f20819284f0cb8ff3cc1b78f35fa6bfe663eec4b23887990ffe7b845c00888a9380667b3e3a2b1891ae1
   console.log(result);
+
+  // ee4a079f5b14a24465181d45af32a8053c2d446446d7019359e210b82e53b8ba
+  console.log(hashed)
 }
 
 main();
